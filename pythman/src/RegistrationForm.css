@@ -1,0 +1,15 @@
+.emailField {
+	color: blue;
+	padding: 8px 30px;
+	border-radius: 20px;
+	border: 2px solid blue;
+	margin-right: 15px;
+}
+.submitBtn {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 6px;
+}

@@ -1,0 +1,30 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+    color: white;
+    font-family: sans-serif;
+}
+
+#root {
+    text-align: center;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+img {
+    width: 100px;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+.container {
+    margin-bottom: 50px;
+}
+

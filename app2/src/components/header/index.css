@@ -1,0 +1,11 @@
+.Header {
+    margin-bottom: 50px;
+    padding: 20px 100px;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 200px 200px blue;
+}
+.Header li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 10px;
+}

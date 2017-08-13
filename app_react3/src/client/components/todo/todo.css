@@ -1,0 +1,23 @@
+.todo {
+  background-color: #eee;
+  display: block;
+  position: absolute;
+  width: 350px;
+  height: auto;
+  left: 50%;
+  margin-left: -175px;
+  top: 100px;
+  padding: 20px;
+}
+.todo h5 {
+  margin-bottom: 10px;
+}
+.todo input {
+  border: none;
+  padding: 7px 15px;
+  border-radius: 4px;
+}
+.todo-list {
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+}

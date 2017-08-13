@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/header/header';
 import Dropdown from './components/dropdown/dropdown';
 import RegistrationForm from './components/registrationForm/registrationForm';
+import TodoList from './components/todo/todo';
 
 const menu = [
   {
@@ -32,6 +33,7 @@ class App extends Component {
         <Header data={ menu } />
         <Dropdown />
         <RegistrationForm />
+        <TodoList />
       </div>
     )
   }

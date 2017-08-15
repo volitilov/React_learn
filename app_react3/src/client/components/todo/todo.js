@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './todo.css';
 
-class TodoList extends Component {
+class Todo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,54 +26,22 @@ class TodoList extends Component {
       itemValue: event.target.value,
     });
   }
-  
-  removeItem(obj) {
-    let mas = [];
-    for (let i in this.items) {
-      if (this.items[i] === obj) {
-        delete this.items[i];
-      }
-      if (this.items[i] !== undefined) {
-        mas.push(this.items[i]);
-      }
-    }
-    this.items = mas;
-    this.setState({
-     items: this.items,
-    });
-    console.log(obj);
-  }
 
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
-    const name = target.name;
-
-    this.setState({
-      ['item_' + name]: value
-    });
-  }
-  
   render() {
     return (
       <div className="todo">
-        <form onSubmit={ () => this.getValue(event) }>
+        <form onSubmit={ this.getValue.bind(this) }>
+          <h5>This is todo</h5>
           <input  type="text" 
                   placeholder="add task" 
                   value={ this.state.itemValue }
-                  onChange={ () => this.changeValue(event) } />
-          <button>Save</button>
+                  onChange={ this.changeValue.bind(this) } />
         </form>
         <div className="todo-list">
           <ul>
             { this.state.items.map((obj, id) =>
-              <li key={ id }>
-                <input
-                  name={ id }
-                  type="checkbox"
-                  onChange={ () => this.handleInputChange(event) } />
+              <li key={ id } onClick="">
                 { obj }
-                <button onClick={ () => this.removeItem(obj) }>X</button>
               </li> 
             )}
           </ul>
@@ -83,4 +51,4 @@ class TodoList extends Component {
   }
 }
 
-export default TodoList;
+export default Todo;

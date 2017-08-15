@@ -1,17 +1,14 @@
 {
-  "name": "app3_redux",
+  "name": "app_redux2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "redux": "3.7.2"
+    "redux": "^3.7.2"
   },
   "devDependencies": {
-    "immutable": "^3.8.1",
-    "react-redux": "^5.0.5",
-    "react-scripts": "1.0.10",
-    "remote-redux-devtools": "^0.5.12"
+    "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",

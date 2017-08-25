@@ -9,7 +9,7 @@ export default class extends Component {
     return (
       <div className='app'>
         <Header />
-    
+
         { this.props.children }
       </div>
     )
